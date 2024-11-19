@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    overflow: hidden;
+    background-color: #F8333C;
+    font-family: "Verdana", sans-serif;
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 10px;
+}
+.turn{
+    font-size: 2em;
+}
+.counter{
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10em;
+}
+.actions-container{
+    position: fixed;
+    bottom: 0; /* Aligns the div at the bottom of the screen */
+    left: 50%; /* Centers the div horizontally */
+    transform: translateX(-50%); /* Offsets the div by 50% of its width to center it */
+    width: 100%;
+    padding: 10px;
+}
+.actions{
+    display: flex;
+    justify-content: center;
+}
+button{
+    background-color: #c2c2c2;
+    border: 2px solid #000000;
+    border-radius: 30px;
+    box-shadow: #000000 4px 4px 0 0;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin: 0 10px;
+    width: 40%;
+}
+
+button:hover {
+background-color: #fff;
+}
+
+button:active {
+box-shadow: #000000 2px 2px 0 0;
+transform: translate(2px, 2px);
+}
+.end-screen{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    z-index: 1000;
+}
+.hidden{
+    display: none;
+}
